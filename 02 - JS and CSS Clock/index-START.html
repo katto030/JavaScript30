@@ -80,10 +80,8 @@
 
       const seconds = now.getSeconds();
       const secDegree = (seconds / 60) * 360 + 90;
-      console.log(seconds)
       if (seconds === 0) {
         document.querySelectorAll('.hand').forEach(hand => hand.style.removeProperty('transition'))
-
       }
       secHand.style.transform = `rotate(${secDegree}deg)`;
 
